@@ -1,0 +1,18 @@
+.galeryContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #D4DAD2;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+}
+.swiper-pagination-bullet-active{
+    background-color: #3E5C41;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #3E5C41;
+}
