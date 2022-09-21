@@ -54,3 +54,4 @@ const Reviews = () =>{
 export default Reviews;
 
 /*<Button variant="text" className="rvBtnText">Ver Más</Button>*/
+/*<a className="rvBtnCont" href="https://www.google.com/maps/place/La+Gertrudis+Casa+de+Campo/@-33.7081643,-69.0790534,17z/data=!3m1!4b1!4m6!3m5!1s0x967c3d4320e67a71:0xa2fed054cb158bb9!8m2!3d-33.7081643!4d-69.0768647!16s%2Fg%2F1trc6561" target="_blank">Escribe un comentario</a>*/
