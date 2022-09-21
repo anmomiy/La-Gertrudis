@@ -12,12 +12,6 @@
     margin:auto;
 }
 
-.rvImgCont{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-top: 56px;
-}
 .rvStars2{
     display: flex;
     flex-direction: row;

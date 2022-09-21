@@ -57,3 +57,12 @@
     border-radius: 8px;
     text-decoration: none;   
 }
+
+@media only screen and (max-width: 641px) {
+    .reviewButtons{
+        margin: 40px 20px 0;
+    }
+    .reviewButtons button, .reviewButtons > a{
+        font-size: 16px;
+    }
+}

@@ -58,5 +58,7 @@
         width: 100%;
         max-width: 325px;
     }
-
+    .rvImgCont{
+        margin-top: 32px;
+    }
 }
