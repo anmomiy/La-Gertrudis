@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     margin: 40px 72px 0;
 }
-.reviewButtons button{
+.reviewButtons button, .reviewButtons > a{
     font-family: 'Caladea';
     font-style: normal;
     font-weight: 700;
@@ -46,11 +46,14 @@
     width: 236px;
     height: 48px;
 }
+.reviewButtons > a{
+    line-height: 48px;
+}
 .reviewButtons > .rvBtnText, .reviewButtons > .rvBtnText:hover {
     text-decoration-line: underline;
 }
 .reviewButtons > .rvBtnCont, .reviewButtons > .rvBtnCont:hover{
     background: #E3E2B0;
     border-radius: 8px;
-    
+    text-decoration: none;   
 }

@@ -5,13 +5,14 @@
     background-size:cover;
     background-position: center;
     margin-top: 72px;
+    
 }
 .formContainer{
     background: rgba(62, 92, 65, 0.6);
     position:relative;
     height: 669px;
     padding-top: 72px;
-
+    backdrop-filter: blur(8px);
 }
 .formTitle{
     font-family: 'Nunito';

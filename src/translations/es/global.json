@@ -29,6 +29,14 @@
             "date":"Hace 4 meses",
             "comment":"Hermoso lugar, muy bien atendido, excelente para relajarse y disfrutar en familia"
         },
+        "review4":{
+            "date":"Hace 2 años",
+            "comment":"Excelente, volvería y recomiendo! Sus dueños son muy amables, siempre bien predispuestos,dan recomendaciones de lugares y rutas. El desayuno bien caserito. La vista desde el parque invita a relajarse y desconectarse. Ojalá los vea pronto"
+        },
+        "review5":{
+            "date":"Hace 10 meses",
+            "comment":"Hermoso lugar para descansar, paisajes bellisimos, paz y mucha calidez de los dueños. El desayuno con vista a la cordillera exquisito... Disfrutamos mucho la experiencia... Un lugar para volver."
+        },
         "btnMore":"Ver más",
         "btnWrite":"Escribe un comentario"
     }

@@ -11,8 +11,9 @@
     justify-content: center;
 }
 .swiper-pagination-bullet-active{
-    background-color: #3E5C41;
+    background-color: black;
 }
 .swiper-button-prev, .swiper-button-next{
-    color: #3E5C41;
+    color: black;
+
 }
