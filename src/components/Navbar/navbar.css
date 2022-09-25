@@ -1,0 +1,197 @@
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background: rgb(62, 92, 65);
+    color: rgb(250, 250, 250);
+    
+    font-weight: 700;
+    padding: 30px;
+}
+
+.nav__container{
+    width: 45%;
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap: 8%;
+    font-size: 16px;
+}
+
+.links__container{
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap: 3%;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.translate__container{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 15%;
+    
+}
+
+.button__translate{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+
+}
+
+.button__translate img {
+    width: 100%;
+}
+
+.line{
+        
+        width: 3px;
+        height: 2rem;
+        border-radius:10px;
+        background: rgb(227, 226, 176);
+    }
+
+.button__reserva{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 37px 8px 37px;
+    background:rgb(227, 226, 176);
+    border-radius:8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav__container a{
+    border-bottom: 3px solid transparent;
+    
+}
+
+.nav__container a:after, .navMenu a:after {
+    display:block;
+    content: '';
+    width: 0;
+    height: 3px;
+    border-radius:10px;
+    background: rgb(227, 226, 176);
+    transition: width .3s;
+}
+
+.nav__container a:hover:after{
+    
+    width: 100%;
+      
+}
+
+.nav__container img{
+    width: 168px;
+}
+.responsiveNavMd{
+    justify-content:space-around;
+}
+.responsiveNavMd > .nav__container{
+    width:65%;
+    gap:5%;
+}
+.responsiveNavSm, .responsiveNavXs{
+    justify-content: flex-start;
+
+}
+.responsiveNavSm > a, .responsiveNavXs > a {
+    margin: auto;
+}
+.navMenu .links__container{
+    flex-direction:column-reverse;
+
+    height: 200px;
+    justify-content: space-around;
+
+}
+.navMenu .line{
+    width: 90%;
+    height: 2px;
+}
+.navMenu .button__reserva{
+    margin: 15px 0;
+}
+.navMenu .navLinks a{
+    font-family: 'Caladea';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    color:white;
+    text-transform: none;
+    width: 200px;
+}
+.navMenu ul{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.navMenu .navLinks{
+    padding:0;
+}
+.navMenu .button__translate img{
+    width: 32px;
+}
+.navMenu{
+    position: absolute;
+    width: 250px;
+    height: 80%;
+    top: 100px;
+    left: 0;
+    background-color: rgb(62, 92, 65);
+    padding: 30px;
+    z-index: 500;
+}
+.navIcons{
+    display: flex;
+    flex-direction: row;
+    width: 128px;
+    height: 40px;
+    justify-content: space-around;
+}
+.navMenu .navIcons svg{
+    width: 32px;
+    height: 32px;
+}
+.navMenu .translate__container{
+    margin: auto;
+    width:max-content;
+}
+.navLinks{
+    width: 120px;
+    line-height: 2;
+}
+.nav__container a{ 
+    color:rgb(250, 250, 250);
+    font-family: 'Caladea';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+}   
+.menuIcon >svg{
+    width: 32px;
+    height:32px;
+}
+.navIcons a, .navIcons svg{
+    color:white;
+    width:24px;
+    height: 24px;
+}
+.closeMenu{
+    margin-left: 90%;
+    width: 28px;
+    height: 28px;
+}
