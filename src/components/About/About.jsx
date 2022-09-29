@@ -1,61 +1,52 @@
 import React from 'react'
-import iconsAbout from '../../iconsAbout'
-import './about.css'
 
+import SlaidesLanding from '../SlaidesLanding/SlaidesLanding'
+import './about.css'
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import IconsAbout from './IconsAbout/IconsAbout';
+import { useTranslation } from 'react-i18next'
 
 
 const About = () => {
+    AOS.init();
+
+  const [t, i18n] = useTranslation("global");
+
     return (
-        <main id="about" >
-
-            <section className='about__container'>
-                <article className='about__article-header'>
-                    <div className='about__contain'>
-                        <h1>Sobre Nosotros</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Error odio explicabo soluta nesciunt? Ex voluptates reiciendis
-                            beatae velit laboriosam nihil quis. Itaque assumenda explicabo
-                            eveniet natus ab adipisci consequatur enim.</p>
+        <>
+            <section className='about__container' id="about">
+                <article className='about__article-header '>
+                    <div className='about__contain' data-aos="fade-right" >
+                        <h1>{t("about.titleAboutUs")}</h1>
+                        <p>{t("about.textAboutUs")}</p>
                     </div>
 
-                    <img src="/assets/familia.png" alt="pasto" />
+                    <img src="/assets/familia.png" alt="pasto" data-aos="fade-up" />
 
 
                 </article>
 
-                <article className='about_article-main'>
-                    <div className='about__container-description'>
-                        <h2>Nuestras Comodidades</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                            omnis cupiditate asperiores nostrum modi, magni, delectus facilis ullam quam cum
-                            minus quis voluptatum debitis? Repudiandae quia deleniti amet et repellendus. Lorem
-                            ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam impedit magni dolorem
-                            ut recusandae dolores rerum voluptatibus excepturi quae!
-                            Ipsa animi rem in eveniet tempora reprehenderit aut atque nostrum voluptates!</p>
+                <article className='about_article-main'  >
+                    <div className='about__container-description' data-aos="fade-right">
+                        <h2>{t("about.titleOurAmenities")}</h2>
+                        <p>{t("about.textOurAmenities")}</p>
                     </div>
 
-                    <div className='about__container-icons'>
-
-                        {
-                            iconsAbout.map((item) => {
-                                return (
-                                    <i key={item.id} >
-                                        <img src={item.img} alt={item.id} />
-                                        <p>{item.title}</p>
-                                    </i>
-
-                                )
-                            })
-                        }
-
-
-                    </div>
+                    <IconsAbout/>
 
                 </article>
+                <SlaidesLanding />
+
             </section>
 
-        </main>
+        </>
+
     )
+
+
+
 }
 
 export default About

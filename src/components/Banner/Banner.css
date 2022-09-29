@@ -44,8 +44,9 @@
 .bannerButtons{
     display: flex;
     flex-direction: row;
+    
 }
-.bannerButtons button{
+.bannerButtons a{
     width: 325px;
     height: 48px;
     border-radius: 8px;
@@ -61,11 +62,27 @@
 .bannerButtons > .bannerHabitaciones, .bannerButtons > .bannerHabitaciones:hover {
     color: #FFFFFF;
     border: 2px solid #E3E2B0;
+    border-radius:16px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    place-items: center;
 }
 
 .bannerButtons > .bannerReservar, .bannerButtons > .bannerReservar:hover {
     color: #000000;
     background-color: #E3E2B0;
+    border-radius:16px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    transition: all .5s ease;
+}
+
+.bannerReservar:hover{
+    background: #f5f4c4 !important;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.336) ;
 }
 
 @media only screen and (max-width: 920px) {
@@ -76,7 +93,7 @@
         font-size: 22px;
 
     }
-    .bannerButtons button{
+    .bannerButtons a{
         width: 250px;
         height: 40px;
         font-size: 16px;

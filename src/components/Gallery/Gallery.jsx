@@ -8,25 +8,32 @@ import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import './Galery.css'
+import './Gallery.css'
+
+
 const Galery = () =>{
+
     return(
         <>
         <Breakpoint at="xs">
-        <div className="galeryContainer">
+        <div className="galeryContainer" >
             <Swiper
                 slidesPerView={1}
-                spaceBetween={10}
-                navigation={true}
+                spaceBetween={0}
                 pagination={{
-                clickable: true,
-                }}
+                    clickable: true,
+                    }}
+            
                 modules={[Grid, Pagination, Navigation]}
                 className="mySwiper"
             >
                 {galeryImage.map(e=>{
                         return(
-                            <SwiperSlide><GaleryItem image={e}/></SwiperSlide>
+                            
+                            <SwiperSlide key={e.id}>
+                                
+                                <GaleryItem image={e} />
+                            </SwiperSlide>
                         )
                     })
                     }
@@ -37,17 +44,15 @@ const Galery = () =>{
         <div className="galeryContainer">
             <Swiper
                 slidesPerView={1}
-                spaceBetween={10}
+                spaceBetween={0}
                 navigation={true}
-                pagination={{
-                clickable: true,
-                }}
+              
                 modules={[Grid, Pagination, Navigation]}
                 className="mySwiper"
             >
                 {galeryImage.map(e=>{
                         return(
-                            <SwiperSlide><GaleryItem image={e}/></SwiperSlide>
+                            <SwiperSlide key={e.id}><GaleryItem image={e} /></SwiperSlide>
                         )
                     })
                     }
@@ -61,15 +66,13 @@ const Galery = () =>{
                 slidesPerView={2}
                 spaceBetween={10}
                 navigation={true}
-                pagination={{
-                clickable: true,
-                }}
+                
                 modules={[Grid, Pagination, Navigation]}
                 className="mySwiper"
             >
                 {galeryImage.map(e=>{
                         return(
-                            <SwiperSlide><GaleryItem image={e}/></SwiperSlide>
+                            <SwiperSlide key={e.id}><GaleryItem image={e} /></SwiperSlide>
                         )
                     })
                     }
@@ -82,7 +85,7 @@ const Galery = () =>{
             <div className="galeryContainer">
                 {galeryImage.map(e=>{
                     return(
-                        <GaleryItem image={e}/>
+                        <GaleryItem image={e} key={e.id}/>
                     )
                 })
                 }

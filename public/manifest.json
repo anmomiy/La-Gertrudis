@@ -1,0 +1,12 @@
+{
+  "short_name": "La Gertrudis",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "Logo_LaGertrudis.png"
+    }
+ 
+  ],
+  "start_url": "."
+
+}

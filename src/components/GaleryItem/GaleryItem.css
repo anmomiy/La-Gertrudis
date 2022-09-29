@@ -1,8 +1,13 @@
 .galeryImg > img{
+    object-fit: cover;
     width: 325px;
     height: 325px;
     border-radius: 16px;
-    margin: 15px
+    margin: 15px;
+    transition: all 0.5s ease;
+}
+.galeryImg > img:hover{
+    transform: scale(1.05);
 }
 .modal img{
     width:fit-content;
